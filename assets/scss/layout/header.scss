@@ -1,0 +1,65 @@
+.header{
+    @extend %bloco;
+    font-size: 12px;
+    background-color: #FFF;
+    height: 100vh;
+
+    .mini-menu{
+        @extend %bloco;
+        background-color: $bgColorMiniMenu;
+    }
+
+    .nav-topo{
+        margin-left: 30px;
+        
+    }
+
+    .pesquisar-site{ position: relative; }
+
+    .input-pesquisar-site{
+        height: 27px;
+        background-color: #d9d9d9;
+        border: none;
+        padding: 5px 0 5px 10px;
+        width: 100%;
+        outline: none;
+    }
+
+    ::placeholder{ color: #000; }
+
+    .btn-pesquisar-site{
+        @extend %buttons;
+        width: 28px;
+        height: 27px;
+        background-image: url(#{$imgPath}/buttons/btn-pesquisar-site.jpg);
+        text-indent: -9999px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .links-nav-topo{
+        display: inline-block;
+        color: $corMenuTopo;
+        font-size: 12px;
+    }
+
+    .usario-logado{
+        display: inline-block;
+    }
+
+    .icone-login{
+        margin-right: 5px;
+    }
+
+    .btn-wishlist{
+        margin: 0 15px;
+    }
+
+    .btn-sacola{
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        margin: 0 10px;
+    }
+}

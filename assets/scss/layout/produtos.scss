@@ -1,0 +1,41 @@
+.produtos{
+    @extend %bloco;
+    margin: 50px 0;
+
+    .produto-item{
+        background-color: $bgColorItemProduto;
+        padding: 15px;
+        flex: 1;
+
+        &:not(:last-child){margin-right: 15px;}
+
+        .categoria{
+            color: $corCategoriaProdutoItem;
+            font-size: 12px;
+            text-align: center;
+            margin: 0 0 5px 0;
+        }
+
+        .nome-produto{
+            color: $corNomeProdutoItem;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .valor{
+            font-size: 16px;
+            text-align: center;
+            color: $corValorProdutoItem;
+            margin: 5px 0 0 0;
+        }
+
+        .thumb-item-produto{
+            display: block;
+            margin: 50px auto 0 auto;
+            text-align: center;
+        }
+    }
+}
