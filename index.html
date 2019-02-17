@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/estilos.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     </head>
     <body>
         <div id="fb-root"></div>
@@ -20,8 +22,8 @@
                         <div class="col-4">
                             <div class="pesquisar-site">
                                 <form action="">
-                                    <input type="text" placeholder="Pesquisar no site" class="input-pesquisar-site">
-                                    <button type="submit" class="btn-pesquisar-site">pesquisar</button>
+                                    <input type="text" placeholder="Pesquisar no site" class="input-default">
+                                    <button type="submit" class="btn-submit btn-pesquisar-site">pesquisar</button>
                                 </form>
                             </div>
                         </div>
@@ -48,17 +50,123 @@
                     </div>
                 </div>
             </div>
+            <div class="menu-principal">
+                <div class="container-element">
+                    <div class="row">
+                        <div class="col">
+                            <div class="logo">
+                                <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="link-principal">
+                                <a href="#">braceletes</a>
+                                <a href="#">bolsas</a>
+                                <a href="#">carteiras</a>
+                                <a href="#">cachecois</a>
+                                <a href="#">colares</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
+
+        <section class="detalhe-produto">
+            <div class="container-element">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="img-principal d-flex">
+                            <img src="assets/images/img-principal.jpg" alt="Imagem Principal">
+                        </div>
+                        <div class="thumbs">
+                            <div class="item">
+                                <img src="assets/images/thumb1.jpg" alt="thumb">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/thumb2.jpg" alt="thumb">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/thumb3.jpg" alt="thumb">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/thumb4.jpg" alt="thumb">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/thumb5.jpg" alt="thumb">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/thumb5.jpg" alt="thumb">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5"></div>
+                </div>
+            </div>
+        </section>
 
         <section class="compartilhe-opiniao">
             <h2 class="titulo">Compartilhe sua opinião no Facebook</h2>
-            <div class="fb-comments-embed">
                 <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
-            </div>
         </section>
 
         <section class="produtos relacionados">
             <h2 class="titulo">Quem viu, viu também</h2>
+            <div class="container-element">
+                <div class="d-flex">
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Foulard Cruciani C
+                                100 silk 45x45
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                    </div>
+
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Fou-leaf CLover
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                        <a class="btn-veja-detalhes" href="#">veja mais detalhes ></a>
+                    </div>
+
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Fou-leaf CLover
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                    </div>
+
+                    <div class="produto-item">
+                        <div class="descricao">
+                                <p class="categoria">bags</p>
+                                <h4 class="nome-produto">
+                                    Fou-leaf CLover
+                                </h4>
+                                <p class="valor">R$ 10,00</p>
+                            </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="produtos relacionados-comprou-tambem">
+            <h2 class="titulo">Quem comprou, comprou também</h2>
             <div class="container-element">
                 <div class="d-flex">
                     <div class="produto-item">
@@ -68,7 +176,6 @@
                             100 silk 45x45
                         </h4>
                         <p class="valor">R$ 10,00</p>
-
                         <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
                     </div>
 
@@ -78,7 +185,6 @@
                             Fou-leaf CLover
                         </h4>
                         <p class="valor">R$ 10,00</p>
-
                         <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
                     </div>
 
@@ -88,7 +194,6 @@
                             Fou-leaf CLover
                         </h4>
                         <p class="valor">R$ 10,00</p>
-
                         <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
                     </div>
 
@@ -98,15 +203,572 @@
                             Fou-leaf CLover
                         </h4>
                         <p class="valor">R$ 10,00</p>
-
                         <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="produtos promocao-da-semana">
+            <h2 class="titulo">Promoção da semana</h2>
+            <div class="container-element">
+                <div class="d-flex">
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Foulard Cruciani C
+                                100 silk 45x45
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                        <div class="cores">
+                            <a href="#" class="square-color cor1"></a>
+                            <a href="#" class="square-color cor2"></a>
+                            <a href="#" class="square-color cor3"></a>
+                            <a href="#" class="square-color cor4"></a>
+                        </div>
+                    </div>
+
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Fou-leaf CLover
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                        <div class="cores">
+                            <a href="#" class="square-color cor1"></a>
+                            <a href="#" class="square-color cor2"></a>
+                            <a href="#" class="square-color cor3"></a>
+                            <a href="#" class="square-color cor4"></a>
+                        </div>
+                    </div>
+
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Fou-leaf CLover
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                        <div class="cores">
+                            <a href="#" class="square-color cor1"></a>
+                            <a href="#" class="square-color cor2"></a>
+                            <a href="#" class="square-color cor3"></a>
+                            <a href="#" class="square-color cor4"></a>
+                        </div>
+                    </div>
+
+                    <div class="produto-item preco-promo">
+                        <div class="wrap-content-preco d-flex">
+                            <div class="item">
+                                <p class="igual">=</p>
+                            </div>
+                            <div class="item">
+                                <p class="preco antes">
+                                    R$ 300
+                                </p>
+                                <p class="preco depois">
+                                    R$ 300
+                                </p>
+                            </div>
+                            <div class="item">
+                                <a class="btn-comprar-todos" href="#">comprar <br> todos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="produtos compre-junto">
+            <h2 class="titulo">Compre junto</h2>
+            <p class="txt-sessao-produto">
+                Lorem ipsum dolor sit amet consectur adsciping lorem ipsum dolor sit amet
+            </p>
+            <div class="container-element">
+                <div class="d-flex">
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Foulard Cruciani C
+                                100 silk 45x45
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                        <div class="cores">
+                            <a href="#" class="square-color cor1"></a>
+                            <a href="#" class="square-color cor2"></a>
+                            <a href="#" class="square-color cor3"></a>
+                            <a href="#" class="square-color cor4"></a>
+                        </div>
+                    </div>
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Fou-leaf CLover
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                        <div class="cores">
+                            <a href="#" class="square-color cor1"></a>
+                            <a href="#" class="square-color cor2"></a>
+                            <a href="#" class="square-color cor3"></a>
+                            <a href="#" class="square-color cor4"></a>
+                        </div>
+                    </div>
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Fou-leaf CLover
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+
+                        <div class="cores">
+                            <a href="#" class="square-color cor1"></a>
+                            <a href="#" class="square-color cor2"></a>
+                            <a href="#" class="square-color cor3"></a>
+                            <a href="#" class="square-color cor4"></a>
+                        </div>
+                    </div>
+                    <div class="produto-item preco-promo">
+                        <div class="wrap-content-preco d-flex">
+                            <div class="item">
+                                <p class="igual">=</p>
+                            </div>
+                            <div class="item">
+                                <p class="preco antes">
+                                    R$ 300
+                                </p>
+                                <p class="preco depois">
+                                    R$ 300
+                                </p>
+                            </div>
+                            <div class="item">
+                                <a class="btn-comprar-todos" href="#">comprar <br> todos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
+        <section class="produtos recomendacao-estilistas">
+            <h2 class="titulo">Os estilistas sugerem</h2>
+            <div class="container-element">
+                <div class="d-flex">
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Foulard Cruciani C
+                                100 silk 45x45
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                    </div>
+
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Fou-leaf CLover
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                    </div>
+
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Fou-leaf CLover
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                    </div>
+
+                    <div class="produto-item">
+                        <div class="descricao">
+                            <p class="categoria">bags</p>
+                            <h4 class="nome-produto">
+                                Fou-leaf CLover
+                            </h4>
+                            <p class="valor">R$ 10,00</p>
+                        </div>
+                        <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram-feed">
+            <div class="container-element">
+                <h2 class="titulo">#ipsun loren no Instagram</h2>
+                <div class="owl-instagram owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="#">
+                            <div class="thumb">
+                                <img src="assets/images/instagram-feed/thumb-insta1.jpg" alt="instagram feed 1">
+                                <div class="bar">
+                                    <p class="txt-bar">ipsum lorem</p>
+                                    <img class="ico-instagram" src="assets/images/icons/ico-instagram-feed.jpg" alt="icone instagram">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="thumb">
+                                <img src="assets/images/instagram-feed/thumb-insta2.jpg" alt="instagram feed 2">
+                                <div class="bar">
+                                    <p class="txt-bar">ipsum lorem</p>
+                                    <img class="ico-instagram" src="assets/images/icons/ico-instagram-feed.jpg" alt="icone instagram">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="thumb">
+                                <img src="assets/images/instagram-feed/thumb-insta3.jpg" alt="instagram feed 3">
+                                <div class="bar">
+                                    <p class="txt-bar">ipsum lorem</p>
+                                    <img class="ico-instagram" src="assets/images/icons/ico-instagram-feed.jpg" alt="icone instagram">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="thumb">
+                                <img src="assets/images/instagram-feed/thumb-insta4.jpg" alt="instagram feed 4">
+                                <div class="bar">
+                                    <p class="txt-bar">ipsum lorem</p>
+                                    <img class="ico-instagram" src="assets/images/icons/ico-instagram-feed.jpg" alt="icone instagram">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="thumb">
+                                <img src="assets/images/instagram-feed/thumb-insta1.jpg" alt="instagram feed 1">
+                                <div class="bar">
+                                    <p class="txt-bar">ipsum lorem</p>
+                                    <img class="ico-instagram" src="assets/images/icons/ico-instagram-feed.jpg" alt="icone instagram">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                                <div class="thumb">
+                                <img src="assets/images/instagram-feed/thumb-insta2.jpg" alt="instagram feed 2">
+                                <div class="bar">
+                                    <p class="txt-bar">ipsum lorem</p>
+                                    <img class="ico-instagram" src="assets/images/icons/ico-instagram-feed.jpg" alt="icone instagram">
+                                </div>
+                            </div>
+                        </a>
+                    </div>                    
+                </div>
+                <button class="custom-nav-owl botao-owl-feed-instagram botao-prev">prev</button>
+                <button class="custom-nav-owl botao-owl-feed-instagram botao-next">next</button>
+            </div>
+        </section>
+
+        <section class="produtos-vistos">
+            <div class="container-element">
+                <h2 class="titulo">Produtos vistos</h2>
+
+                <div class="owl-produtos-vistos owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="content-produto-visto">
+                            <div class="descricao">
+                                <p class="categoria">bags</p>
+                                <h4 class="nome-produto">
+                                    Foulard Cruciani C
+                                    100 silk 45x45
+                                </h4>
+                                <p class="valor">R$ 10,00</p>
+                            </div>
+                            <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                            <a class="btn-veja-detalhes" href="#">veja mais detalhes ></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content-produto-visto">
+                            <div class="descricao">
+                                <p class="categoria">bags</p>
+                                <h4 class="nome-produto">
+                                    Foulard Cruciani C
+                                    100 silk 45x45
+                                </h4>
+                                <p class="valor">R$ 10,00</p>
+                            </div>
+                            <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content-produto-visto">
+                            <div class="descricao">
+                                <p class="categoria">bags</p>
+                                <h4 class="nome-produto">
+                                    Foulard Cruciani C
+                                    100 silk 45x45
+                                </h4>
+                                <p class="valor">R$ 10,00</p>
+                                </div>
+                            <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content-produto-visto">
+                            <div class="descricao">
+                                <p class="categoria">bags</p>
+                                <h4 class="nome-produto">
+                                    Foulard Cruciani C
+                                    100 silk 45x45
+                                </h4>
+                                <p class="valor">R$ 10,00</p>
+                            </div>
+                            <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content-produto-visto">
+                            <div class="descricao">
+                                <p class="categoria">bags</p>
+                                <h4 class="nome-produto">
+                                    Foulard Cruciani C
+                                    100 silk 45x45
+                                </h4>
+                                <p class="valor">R$ 10,00</p>
+                            </div>
+                            <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content-produto-visto">
+                            <div class="descricao">
+                                <p class="categoria">bags</p>
+                                <h4 class="nome-produto">
+                                    Foulard Cruciani C
+                                    100 silk 45x45
+                                </h4>
+                                <p class="valor">R$ 10,00</p>
+                            </div>
+                            <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content-produto-visto">
+                            <div class="descricao">
+                                <p class="categoria">bags</p>
+                                <h4 class="nome-produto">
+                                    Foulard Cruciani C
+                                    100 silk 45x45
+                                </h4>
+                                <p class="valor">R$ 10,00</p>
+                            </div>
+                            <img class="thumb-item-produto" src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="Thumb Produto">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="custom-nav-owl botao-owl-produtos-vistos botao-prev">prev</button>
+                <button class="custom-nav-owl botao-owl-produtos-vistos botao-next">next</button>
+            </div>
+        </section>
+
+        <section class="informacoes">
+            <div class="container-element">
+                <div class="d-flex">
+                    <div class="item">
+                        <img class="icone" src="assets/images/icons/ico-producao.png" alt="produzido na italia">
+                        <p class="legenda">Produzido na Itália</p>
+                    </div>
+                    <div class="item">
+                        <img class="icone" src="assets/images/icons/ico-entrega.png" alt="Entrega rapida">
+                        <p class="legenda">Entrega Rápida</p>
+                    </div>
+                    <div class="item">
+                        <img class="icone" src="assets/images/icons/ico-pagamento.png" alt="Pagamento Seguro">
+                        <p class="legenda">Pagamento Seguro</p>
+                    </div>
+                    <div class="item">
+                        <img class="icone" src="assets/images/icons/ico-garantia.png" alt="Garantia">
+                        <p class="legenda">Garantia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="links-uteis">
+            <div class="container-element">
+                <div class="row">
+                    <div class="col">
+                        <div class="content">
+                            <p>Categorias</p>
+                            <a class="link" href="#">Braceletes</a>
+                            <a class="link" href="#">Bolsas</a>
+                            <a class="link" href="#">Carteiras</a>
+                            <a class="link" href="#">Lenços</a>
+                            <a class="link" href="#">Colares</a>
+                            <a class="link" href="#">Look</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="content">
+                            <p>Informação</p>
+                            <a class="link" href="#">Quem somos</a>
+                            <a class="link" href="#">Onde encontrar</a>
+                            <a class="link" href="#">Afiliados</a>
+                            <a class="link" href="#">Como comprar</a>
+                            <a class="link" href="#">Formas de pagamento</a>
+                            <a class="link" href="#">Política de troca</a>
+                            <a class="link" href="#">Política de privacidade</a>
+                            <a class="link" href="#">Prazo de entrega</a>
+                            <a class="link" href="#">Fale conosco</a>
+                            <a class="link" href="#">SAC</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="redes-sociais">
+                            <p>Siga-nos</p>
+                            <a class="link-social fb" href="#">facebook</a>
+                            <a class="link-social yt" href="#">youtube</a>
+                            <a class="link-social insta" href="#">instagram</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="newsletter">
+                            <p>Newsletter</p>
+                            <form action="">
+                                <input type="text" class="input-default">
+                                <button type="submit" class="btn-submit btn-assinar-news">assinar newsletter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container-element">
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/images/pagamento.jpg" alt="formas de pagamento">
+                    </div>
+                    <div class="col">
+                        <div class="selos">
+                            <a href="#"><img src="assets/images/selo-seguro.jpg" alt="Site Seguro"></a>
+                            <a href="#"><img src="assets/images/selo-rakuten.jpg" alt="Rakuten EC Service"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="endereco">
+                            <p>© 2016 IPSUN LOREN LTDA. CNPJ: 00.000.000/0001-91 </p>
+                            <p>Av Francisco Matarazzo, 1500 - 6° andar – Barra Funda – São Paulo – SP   CEP: 05001-100</p>
+                            <p>Telefone SAC: 11- 0000-0000 | Segunda a Sexta-feira, das 09:00hs às 18:00hs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script>
+            $(function(){
+
+                const initOwlInstagram = function(){
+
+                    let owlFeedInstagram = $('.owl-instagram');
+                    owlFeedInstagram.owlCarousel({
+                        loop: false,
+                        margin: 10,
+                        nav: false,
+                        dots: false,
+                        items: 4,
+                        responsive:{
+                            0:{
+                                items:1,
+                                dots: true
+                            },
+                            600:{
+                                items:4
+                            }
+                        }
+                    });
+
+                    let botaoOwlFeedInstagram = $(".botao-owl-feed-instagram");
+                    botaoOwlFeedInstagram.on('click', function(){
+                        if( $(this).hasClass('botao-next') ){
+                            owlFeedInstagram.trigger('next.owl.carousel');
+                        }else{
+                            owlFeedInstagram.trigger('prev.owl.carousel');
+                        }
+                    });
+                }
+
+                const initOwlProdutosVistos = function(){
+
+                    let owlProdutosVistos = $('.owl-produtos-vistos');
+                    owlProdutosVistos.owlCarousel({
+                        loop: false,
+                        margin: 10,
+                        nav: false,
+                        dots: false,
+                        items: 5,
+                        responsive:{
+                            0:{
+                                items:1,
+                                dots: true
+                            },
+                            600:{
+                                items:4
+                            }
+                        }
+                    });
+
+                    let botaoOwlProdutosVistos = $(".botao-owl-produtos-vistos");
+                    botaoOwlProdutosVistos.on('click', function(){
+                        if( $(this).hasClass('botao-next') ){
+                            owlProdutosVistos.trigger('next.owl.carousel');
+                        }else{
+                            owlProdutosVistos.trigger('prev.owl.carousel');
+                        }
+                    });
+                }
+
+                initOwlInstagram();
+                initOwlProdutosVistos();
+
+            });
+
+            
+        </script>
     </body>
 </html>

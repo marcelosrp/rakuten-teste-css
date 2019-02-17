@@ -1,9 +1,7 @@
 .header{
     @extend %bloco;
     font-size: 12px;
-    background-color: #FFF;
-    height: 100vh;
-
+    
     .mini-menu{
         @extend %bloco;
         background-color: $bgColorMiniMenu;
@@ -16,23 +14,7 @@
 
     .pesquisar-site{ position: relative; }
 
-    .input-pesquisar-site{
-        height: 27px;
-        background-color: #d9d9d9;
-        border: none;
-        padding: 5px 0 5px 10px;
-        width: 100%;
-        outline: none;
-    }
-
-    ::placeholder{ color: #000; }
-
     .btn-pesquisar-site{
-        @extend %buttons;
-        width: 28px;
-        height: 27px;
-        background-image: url(#{$imgPath}/buttons/btn-pesquisar-site.jpg);
-        text-indent: -9999px;
         position: absolute;
         top: 0;
         right: 0;
@@ -61,5 +43,31 @@
         color: white;
         padding: 5px 15px;
         margin: 0 10px;
+    }
+
+    .menu-principal{
+        background-color: #FFF;
+        @extend %bloco;
+        padding: 30px 0;
+
+        .logo{
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .link-principal{
+            margin: 30px auto 0 auto;
+            text-align: center;
+
+            a{
+                display: inline-block;
+                color: $corMenuPrincipal;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1px;
+                
+                &:not(:last-child){ margin-right: 10px; }
+            }
+        }
     }
 }
