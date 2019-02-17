@@ -8,18 +8,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/estilos.css">
+        <link rel="stylesheet" href="assets/css/media.css">
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="assets/css/hamburgers.css">
     </head>
     <body>
         <div id="fb-root"></div>
         <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 
         <header class="header">
+            <div class="hamburguer-mobile">
+                <button class="hamburger hamburger--elastic" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+
             <div class="mini-menu">
                 <div class="container-element">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-12 col-md-3 col-lg-4">
                             <div class="pesquisar-site">
                                 <form action="">
                                     <input type="text" placeholder="Pesquisar no site" class="input-default">
@@ -27,7 +37,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-12 col-md-9 col-lg-8">
                             <div class="nav-topo">
                                 <div class="usario-logado">
                                     <a class="links-nav-topo nome-usuario" href="">
@@ -41,10 +51,61 @@
                                 </a>
                                 <a class="links-nav-topo" href="#">Minha Conta</a>
                                 <a class="links-nav-topo" href="#">| Meus Pedidos</a>
-                                <a class="btn-sacola links-nav-topo" href="#">
+                                <a class="btn-sacola links-nav-topo" href="#" title="Clique para ver a sacola">
                                     <img src="assets/images/icons/ico-sacola.jpg" alt="icone sacola" class="icone-sacola">
                                     Minha sacola
                                 </a>
+
+                                <div class="box-cesta">
+                                    <div class="item item1">
+                                        <div class="thumb">
+                                            <img src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="">
+                                            <h4 class="nome">Creation Creation Leader</h4>
+                                            <span class="referencia">AD13.210</span>
+                                        </div>
+                                        <div class="infos">
+                                            <p>
+                                                Cor: Preto | Tamanho: 40
+                                            </p>
+                                            <p>
+                                                Quantidade: 01
+                                                <span class="valor">R$ 000,00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item item2">
+                                        <div class="thumb">
+                                            <img src="assets/images/produtos-thumb/thumb-item-produto.jpg" alt="">
+                                            <h4 class="nome">Creation Creation Leader</h4>
+                                            <span class="referencia">AD13.210</span>
+                                        </div>
+                                        <div class="infos">
+                                            <p>
+                                                Cor: Preto | Tamanho: 40
+                                            </p>
+                                            <p>
+                                                Quantidade: 01
+                                                <span class="valor">R$ 000,00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="resumo">
+                                        <div class="quantidade">
+                                            <p>
+                                                2 itens na sacola
+                                                
+                                                <span class="total">
+                                                    <b>Total:</b> R$ 000,00
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="botoes">
+                                            <a href="#" class="btn-comprar-mais">Comprar mais produtos</a>
+                                            <a href="#" class="btn-concluir-compra">Concluir compra</a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -62,6 +123,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="link-principal">
+                                <p>Shopp</p>
                                 <a href="#">braceletes</a>
                                 <a href="#">bolsas</a>
                                 <a href="#">carteiras</a>
@@ -77,32 +139,84 @@
         <section class="detalhe-produto">
             <div class="container-element">
                 <div class="row">
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                         <div class="img-principal d-flex">
                             <img src="assets/images/img-principal.jpg" alt="Imagem Principal">
                         </div>
                         <div class="thumbs">
-                            <div class="item">
-                                <img src="assets/images/thumb1.jpg" alt="thumb">
+                            <div class="item ativo">
+                                <a href="#"><img src="assets/images/thumb1.jpg" alt="thumb"></a>
                             </div>
                             <div class="item">
-                                <img src="assets/images/thumb2.jpg" alt="thumb">
+                                <a href="#"><img src="assets/images/thumb2.jpg" alt="thumb"></a>
                             </div>
                             <div class="item">
-                                <img src="assets/images/thumb3.jpg" alt="thumb">
+                                <a href="#"><img src="assets/images/thumb3.jpg" alt="thumb"></a>
                             </div>
                             <div class="item">
-                                <img src="assets/images/thumb4.jpg" alt="thumb">
+                                <a href="#"><img src="assets/images/thumb4.jpg" alt="thumb"></a>
                             </div>
                             <div class="item">
-                                <img src="assets/images/thumb5.jpg" alt="thumb">
+                                <a href="#"><img src="assets/images/thumb5.jpg" alt="thumb"></a>
                             </div>
                             <div class="item">
-                                <img src="assets/images/thumb5.jpg" alt="thumb">
+                                <img src="assets/images/icons/ico-play-video.png" alt="play video" class="ico-play-video">
+                                <a href="#"><img src="assets/images/thumb5.jpg" alt="thumb"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-5"></div>
+                    <div class="col-12 col-md-5">
+                        <div class="nav-produtos">
+                            <a class="btn-anterior" href="#">
+                                <img src="assets/images/buttons/seta-prev.png" alt="anterior">
+                                Anterior
+                            </a>
+                            <a class="btn-proximo" href="#">
+                                Próximo
+                                <img src="assets/images/buttons/seta-next.jpg" alt="proxima">
+                            </a>
+                        </div>
+                        <div class="descricao-produto">
+                            <h1 class="titulo-detalhe-produto">Square Bag Calfskin razza print with chain</h1>
+                            <span class="referencia">AD13.210</span>
+                            <p class=txt-descricao-produto>
+                                square bag with plaque/magnet fastening and
+                                gold chain. Leather surface treated with ray-
+                                effect resin. Gold-plated brass logo on front.
+                            </p>
+                            <a href="#" class="leia-mais">leia mais</a>
+                        </div>
+                        <div class="cores-detalhe-produto">
+                            <p>Cor: <strong>Bege</strong></p>
+                            <a href="#" data-cor="Azul" class="square-color cor1"></a>
+                            <a href="#" data-cor="Bege" class="ativo square-color cor2"></a>
+                            <a href="#" data-cor="Preto" class="square-color cor3"></a>
+                            <a href="#" data-cor="Cinza" class="square-color cor4"></a>
+                        </div>
+                        <div class="valor-produto">
+                            <div class="valores">
+                                <p class="antes">R$ 281,00</p>
+                                <p class="depois">R$ 261,00</p>
+                                <p class="parcela">
+                                    3x de <span>R$ 261,00</span>
+                                    <br>
+                                    sem juros
+                                </p>
+                            </div>
+                            <div class="botao">
+                                <a href="#" class="botao-padrao-produto btn-add-sacola">adicionar <br> à sacola</a>
+                            </div>
+                        </div>
+                        <div class="botoes-social">
+                            <div class="wishlist">
+                                <a href="#" class="btn-wishlist">
+                                    <img src="assets/images/icons/ico-wishlist.png" alt="wishlist">
+                                    + wishlist
+                                </a>
+                            </div>
+                            <img class="btns-redes-social" src="assets/images/buttons/botoes-social-marcacao.jpg" alt="Botoes rede social">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -279,7 +393,7 @@
                                 </p>
                             </div>
                             <div class="item">
-                                <a class="btn-comprar-todos" href="#">comprar <br> todos</a>
+                                <a class="botao-padrao-produto btn-comprar-todos" href="#">comprar <br> todos</a>
                             </div>
                         </div>
                     </div>
@@ -358,7 +472,7 @@
                                 </p>
                             </div>
                             <div class="item">
-                                <a class="btn-comprar-todos" href="#">comprar <br> todos</a>
+                                <a class="botao-padrao-produto btn-comprar-todos" href="#">comprar <br> todos</a>
                             </div>
                         </div>
                     </div>
@@ -674,10 +788,10 @@
         <section class="footer">
             <div class="container-element">
                 <div class="row">
-                    <div class="col">
-                        <img src="assets/images/pagamento.jpg" alt="formas de pagamento">
+                    <div class="col-12 col-md-6">
+                        <img src="assets/images/pagamento.jpg" alt="formas de pagamento" class="formas-pagamento">
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-md-6">
                         <div class="selos">
                             <a href="#"><img src="assets/images/selo-seguro.jpg" alt="Site Seguro"></a>
                             <a href="#"><img src="assets/images/selo-rakuten.jpg" alt="Rakuten EC Service"></a>
@@ -700,75 +814,6 @@
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
-        <script>
-            $(function(){
-
-                const initOwlInstagram = function(){
-
-                    let owlFeedInstagram = $('.owl-instagram');
-                    owlFeedInstagram.owlCarousel({
-                        loop: false,
-                        margin: 10,
-                        nav: false,
-                        dots: false,
-                        items: 4,
-                        responsive:{
-                            0:{
-                                items:1,
-                                dots: true
-                            },
-                            600:{
-                                items:4
-                            }
-                        }
-                    });
-
-                    let botaoOwlFeedInstagram = $(".botao-owl-feed-instagram");
-                    botaoOwlFeedInstagram.on('click', function(){
-                        if( $(this).hasClass('botao-next') ){
-                            owlFeedInstagram.trigger('next.owl.carousel');
-                        }else{
-                            owlFeedInstagram.trigger('prev.owl.carousel');
-                        }
-                    });
-                }
-
-                const initOwlProdutosVistos = function(){
-
-                    let owlProdutosVistos = $('.owl-produtos-vistos');
-                    owlProdutosVistos.owlCarousel({
-                        loop: false,
-                        margin: 10,
-                        nav: false,
-                        dots: false,
-                        items: 5,
-                        responsive:{
-                            0:{
-                                items:1,
-                                dots: true
-                            },
-                            600:{
-                                items:4
-                            }
-                        }
-                    });
-
-                    let botaoOwlProdutosVistos = $(".botao-owl-produtos-vistos");
-                    botaoOwlProdutosVistos.on('click', function(){
-                        if( $(this).hasClass('botao-next') ){
-                            owlProdutosVistos.trigger('next.owl.carousel');
-                        }else{
-                            owlProdutosVistos.trigger('prev.owl.carousel');
-                        }
-                    });
-                }
-
-                initOwlInstagram();
-                initOwlProdutosVistos();
-
-            });
-
-            
-        </script>
+        <script src="assets/js/geral.js"></script>
     </body>
 </html>

@@ -1,6 +1,8 @@
 .header{
     @extend %bloco;
     font-size: 12px;
+
+    .hamburguer-mobile{ display: none; }
     
     .mini-menu{
         @extend %bloco;
@@ -9,7 +11,100 @@
 
     .nav-topo{
         margin-left: 30px;
+        position: relative;
+    }
+
+    .box-cesta{
+        width: 389px;
+        height: 360px;
+        position: absolute;
+        z-index: 2;
+        background: #FFF;
+        border: 1px solid #000;
+        right: 0;
+        padding: 20px 10px;
+        overflow: auto;
+        display: none;
         
+
+        .item{
+            @extend %bloco;
+            padding-bottom: 15px;
+            border-bottom: 1px dotted #000;
+            margin-bottom: 20px;
+        }
+
+        .thumb{
+            @extend %bloco;
+
+            img{
+                width: 30px;
+                float: left;
+                margin-right: 15px;
+            }
+
+            .nome{
+                font-size: 14px;
+                color: #000;
+                letter-spacing: 1px;
+                margin: 0;
+            }
+
+            .referencia{
+                font-size: 10px;
+                color: #7f7f7f;
+                display: block;
+            }
+        }
+
+        .infos{
+            @extend %bloco;
+            margin-top: 15px;
+            font-size: 14px;
+
+            p{
+                margin: 0;
+
+                .valor{ float: right; }
+            }
+        }
+
+        .resumo{
+            @extend %bloco;
+
+            .quantidade{
+                p{
+                    font-size: 14px;
+
+                    .total{
+                        float: right;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .botoes{
+                margin-top: 20px;
+
+                a{ 
+                    display: inline-block;
+                    padding: 5px 10px;
+                    font-size: 12px;
+
+                    &.btn-comprar-mais{
+                        background-color: #d9d9d9;
+                        color: #000;
+                        float: left;
+                    }
+
+                    &.btn-concluir-compra{
+                        background-color: #000;
+                        color: #fff;
+                        float: right;
+                    }
+                }
+            }
+        }
     }
 
     .pesquisar-site{ position: relative; }
@@ -48,7 +143,7 @@
     .menu-principal{
         background-color: #FFF;
         @extend %bloco;
-        padding: 30px 0;
+        padding: 30px 0 0 0;
 
         .logo{
             margin: 0 auto;
@@ -56,8 +151,28 @@
         }
 
         .link-principal{
-            margin: 30px auto 0 auto;
+            margin: 0 auto;
             text-align: center;
+
+            p{
+                display: inline-block;
+                color: #aeacac;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1px;
+                padding: 0 20px;
+
+                &:after{
+                    content: '';
+                    width: 9px;
+                    height: 38px;
+                    display: inline-block;
+                    position: relative;
+                    top: 14px;
+                    left: 10px;
+                    background-image: url(#{$imgPath}/icons/ico-btn-shopp.png);
+                }
+            }
 
             a{
                 display: inline-block;

@@ -10,6 +10,7 @@ body{
     font-family: $font1;
     background-color: $bgColorBody;
     font-family: $font2;
+    overflow-x: hidden; 
 }
 
 .container-element{
@@ -35,7 +36,7 @@ body{
     @extend %buttons;
     width: 28px;
     height: 27px;
-    background-image: url(#{$imgPath}/buttons/btn-pesquisar-site.jpg);
+    background-image: url(#{$imgPath}buttons/btn-pesquisar-site.jpg);
     text-indent: -9999px;
     position: absolute;
     top: 0;
@@ -72,13 +73,13 @@ body{
     @extend %buttons;
     position: absolute;
     top: 50%;
-    background-image: url(#{$imgPath}/buttons/setas-feed-instagram.png);
+    background-image: url(#{$imgPath}buttons/setas-feed-instagram.png);
     background-repeat: no-repeat;
     z-index: 2;
     text-indent: -9999px;
     width: 35px;
     height: 35px;
-    transform: translateY(100%);
+    
 
     &.botao-prev{
         left: -5%;
@@ -118,4 +119,34 @@ body{
         color: #000;
     }
 
+}
+
+.square-color{
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+
+    &:not(:last-child){ margin-right: 5px; }
+
+    &.ativo{ transform: scale(1.2); }
+
+    &.cor1{ background-color: $bgColorSquareThumb1; }
+    &.cor2{ background-color: $bgColorSquareThumb2; }
+    &.cor3{ background-color: $bgColorSquareThumb3; }
+    &.cor4{ background-color: $bgColorSquareThumb4; }
+
+    &:hover{ transform: scale(1.2); }
+}
+
+.botao-padrao-produto{
+    background-color: $bgColorBtnComprarTodos;
+    color: #FFF;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    line-height: 19px;
+    padding: 5px 10px;
+    font-size: 14px;
+    transition: all .3s linear;
 }
