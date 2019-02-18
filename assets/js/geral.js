@@ -16,7 +16,9 @@ $(function(){
                 },
                 600:{
                     items:4,
-                    dots: true
+                },
+                1200:{
+                    dots: false
                 }
             }
         });
@@ -48,6 +50,9 @@ $(function(){
                 600:{
                     items:4,
                     dots: true
+                },
+                1200:{
+                    dots: false
                 }
             }
         });
